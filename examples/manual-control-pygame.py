@@ -1,5 +1,8 @@
+import sys
+sys.path.append('D:\Projects\Tello\DJITelloPy\TelloSDKPy')
 from djitellopy import Tello
 import cv2
+
 import pygame
 import numpy as np
 import time
@@ -107,13 +110,13 @@ class FrontEnd(object):
             self.left_right_velocity = -S
         elif key == pygame.K_RIGHT:  # set right velocity
             self.left_right_velocity = S
-        elif key == pygame.K_w:  # set up velocity
+        elif key == pygame.K_z:  # set up velocity
             self.up_down_velocity = S
         elif key == pygame.K_s:  # set down velocity
             self.up_down_velocity = -S
         elif key == pygame.K_a:  # set yaw counter clockwise velocity
             self.yaw_velocity = -S
-        elif key == pygame.K_d:  # set yaw clockwise velocity
+        elif key == pygame.K_e:  # set yaw clockwise velocity
             self.yaw_velocity = S
 
     def keyup(self, key):

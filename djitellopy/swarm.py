@@ -1,4 +1,4 @@
-from .tello import Tello
+from examples.tello import Tello
 from threading import Thread, Barrier
 from queue import Queue
 
